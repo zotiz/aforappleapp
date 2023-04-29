@@ -176,3 +176,48 @@ a:hover{
       color:#dfb4b4aa;
     }
 } 
+@media only screen and (max-width: 350px) {
+  button {
+ 
+    font-size: 14px;
+   
+  } 
+  #result {
+    
+    /* background-size:330px 330px; */
+    background-size: 250px 250px;
+  
+
+  }
+
+}
+@media only screen and (max-width: 300px) {
+  .inputButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin:auto;
+  
+  }
+  #result {
+    
+    /* background-size:330px 330px; */
+    background-size: 200px 200px;
+  
+
+  }
+  button{
+    width: 100%;
+  }
+  input{
+    margin:-5px 0px 5px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 17px;
+  }
+  span {
+    font-size: 20px;
+  }
+}
