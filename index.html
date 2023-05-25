@@ -25,125 +25,216 @@
       <div class="inputButton">
       <input id="user" type="text" required placeholder="Type 'A' or 'a' " title="Type A Single Letter." autofocus>
       <!--Button-->
-      <button onclick="a_for_apple()">Click Me</button>
+      <button >Click Me</button>
       </div>
       <!--For Creator-->
       <div class="creator">
           <a href="https://www.instagram.com/code_with_zoti/"> Made By Jyoti D.</a>
       </div>
+      <!-- add JavaScript -->
       <script>
+        const input = document.querySelector('input');
+        input.addEventListener('change', a_for_apple)
+        const btn = document.querySelector('button')
+        let audioMessage;
+        btn.addEventListener('click',a_for_apple)
         function a_for_apple(){
         var a= document.getElementById("user").value;
         var b = document.getElementById("result");
         var c =document.getElementById("name");
+        //for audio;
+        audioMessage = new SpeechSynthesisUtterance();
              if (a=="a" || a=="A"){
                       b.style.backgroundImage="url(image/apple.png)";
                       c.innerHTML="Apple";
+                      //audio
+                      audioMessage.text = "Apple";
+                      window.speechSynthesis.speak(audioMessage);
+                      
                     }
+                   
              else if  (a=="b" || a == "B"){
                b.style.backgroundImage="url(image/ball.png)";
                c.innerHTML="Ball";
+                //audio
+                audioMessage.text = "Ball";
+                window.speechSynthesis.speak(audioMessage);
               }
              else if (a=="c" || a=="C"){
               b.style.backgroundImage="url(image/cat-2.png)";
               c.innerHTML="Cat";
+               //audio
+               audioMessage.text = "Cat";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="d" || a=="D"){
               b.style.backgroundImage="url(image/dog.png)";
               c.innerHTML="Dog";
+               //audio
+               audioMessage.text = "Dog";
+               window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="e" || a=="E"){
               b.style.backgroundImage="url(image/elephant.png)";
               c.innerHTML="Elephant";
+               //audio
+               audioMessage.text = "Elephant";
+              window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="f" || a=="F"){
               b.style.backgroundImage="url(image/fish.png)";
               c.innerHTML="Fish";
+               //audio
+               audioMessage.text = "Fish";
+              window.speechSynthesis.speak(audioMessage);
              }
              else if (a =="g" || a=="G"){
               b.style.backgroundImage="url(image/goat.png"
               c.innerHTML="Goat";
+               //audio
+               audioMessage.text = "Goat";
+               window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="h" || a=="H"){
               b.style.backgroundImage="url(image/hean.png)";
               c.innerHTML="Hean";
+               //audio
+              audioMessage.text = "Hean";
+              window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="i" || a=="I"){
               b.style.backgroundImage="url(image/ink.png)";
               c.innerHTML="Ink";
+               //audio
+               audioMessage.text = "Ink";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="j" || a=="J"){
               b.style.backgroundImage="url(image/jug.png)";
               c.innerHTML="Jug";
+               //audio
+               audioMessage.text = "Jug";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a =="k" || a=="K"){
               b.style.backgroundImage="url(image/key.png)"
               c.innerHTML="Key";
+               //audio
+               audioMessage.text = "Key";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="l" || a=="L"){
               b.style.backgroundImage="url(image/lion.png)";
               c.innerHTML="Lion";
+               //audio
+               audioMessage.text = "Lion";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="m" || a=="M"){
               b.style.backgroundImage="url(image/monkey.png)";
               c.innerHTML="Monkey";
+               //audio
+               audioMessage.text = "Monkey";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="n" || a=="N"){
               b.style.backgroundImage="url(image/nest.png)";
               c.innerHTML="Nest";
+               //audio
+               audioMessage.text = "Nest";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="o" || a=="O"){
               b.style.backgroundImage="url(image/orange.png)";
               c.innerHTML="Orange";
+               //audio
+               audioMessage.text = "Orange";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="p" || a=="P"){
               b.style.backgroundImage="url(image/parrot.png)";
               c.innerHTML="Parrot";
+               //audio
+               audioMessage.text = "Parrot";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="q" || a=="Q"){
               b.style.backgroundImage="url(image/question1.png)";
               c.innerHTML="Question";
+               //audio
+               audioMessage.text = "Question";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="r" || a=="R"){
               b.style.backgroundImage="url(image/rabbit.png)";
               c.innerHTML="Rabbit";
+               //audio
+               audioMessage.text = "Rabbit";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="s" || a=="S"){
               b.style.backgroundImage="url(image/star.png)";
               c.innerHTML="Star";
+               //audio
+               audioMessage.text = "Star";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="t" || a=="T"){
               b.style.backgroundImage="url(image/tiger.png)";
               c.innerHTML="Tiger";
+               //audio
+               audioMessage.text = "Tiger";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="u" || a=="U"){
               b.style.backgroundImage="url(image/umbrella.png)";
               c.innerHTML="Umbrella";
+               //audio
+               audioMessage.text = "Umbrella";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="v" || a=="V"){
               b.style.backgroundImage="url(image/vegitable.png)";
               c.innerHTML="Vegitable";
+               //audio
+               audioMessage.text = "Vegitable";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="w" || a=="W"){
               b.style.backgroundImage="url(image/wolf.png)";
               c.innerHTML="Wolf";
+               //audio
+               audioMessage.text = "Wolf";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="x" || a=="X"){
               b.style.backgroundImage="url(image/xylophone.png)";
               c.innerHTML="Xylophone";
+               //audio
+               audioMessage.text = "Xylophone";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="y" || a=="Y"){
               b.style.backgroundImage="url(image/yak.png)";
               c.innerHTML="Yak";
+               //audio
+               audioMessage.text = "Yak";
+                window.speechSynthesis.speak(audioMessage);
              }
              else if (a=="z" || a=="Z"){
               b.style.backgroundImage="url(image/zebra.png)";
               c.innerHTML="Zebra";
+               //audio
+               audioMessage.text = "Zebra";
+                window.speechSynthesis.speak(audioMessage);
              }
     
              else {
                b.style.backgroundImage="url(image/type.png)";
                c.innerHTML=""; 
+                //audio
+                audioMessage.text = "Type single character";
+                window.speechSynthesis.speak(audioMessage);
              }
              
                   }
